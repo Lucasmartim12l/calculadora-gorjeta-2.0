@@ -18,6 +18,7 @@
     --greyish-turquiose: #5e7a7d;
     --squeeze: #f3f9f4;
     --sherpa-blue: #00470b;
+    --topaz: #26c2ae;
 }
 
 body{
@@ -42,6 +43,10 @@ main{
 .info{
     padding-inline: .8rem;
 
+        div{
+            margin-bottom: 3.5rem;
+        }
+
     strong{
         color:var(--greyish-turquiose);
         display: block;
@@ -65,7 +70,17 @@ main{
                 outline: none;
                 color: var(--sherpa-blue);
             }
+
+            input::placeholder{
+                color: var(--sherpa-blue);
+                opacity: 0.35;
+            }
         }
+        }
+
+    .input-box:has(input:focus){
+
+    }
 }
-}
+
 
