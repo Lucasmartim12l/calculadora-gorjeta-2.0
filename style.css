@@ -20,6 +20,7 @@
     --sherpa-blue: #00474b;
     --topaz: #26c2ae;
     --beetle-green: #547878;
+    --regent-grey: #7f9d9f;
 }
 
 body{
@@ -53,6 +54,7 @@ main{
         color:var(--greyish-turquiose);
         display: block;
         margin-bottom: .6rem;
+    }
 
         .input-box{
             background: var(--squeeze);
@@ -78,7 +80,7 @@ main{
                 opacity: 0.35;
             }
         }
-        }
+        
 
     .input-box:has(input:focus){
         outline: 2px solid var(--topaz);
@@ -125,5 +127,45 @@ main{
 
 .results{
     background: var(--sherpa-blue);
+    border-radius: 1.5rem;
+    padding: 2.4rem;
+
+    .amount,
+    .total{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5rem;
+
+
+        p{
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.3rem;
+
+            span{
+                color: var(--regent-grey);
+                
+            }
+        }
+
+        strong{
+            color: var(--topaz);
+            font-size: 3.2rem;
+        }
+    }
+
+    button{
+        padding-block: .9rem;
+        width: 100%;
+        background: var(--topaz);
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: var(--sherpa-blue);
+        font-weight: 700;
+        
+    }
 }
 
