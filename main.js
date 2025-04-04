@@ -7,7 +7,7 @@ let billInput = document.querySelector("#bill")
 billInput.addEventListener("input", receiveBillValue )
 
 let numberOfPeopleInput = document.querySelector("#people")
-numberOfPeopleInput.addEventListener("input", )
+numberOfPeopleInput.addEventListener("input", receiveNumberOfPeopleValue )
 
 function receiveBillValue(){
     bill = billInput.valueAsNumber
