@@ -66,3 +66,11 @@ function caculate(){
     }
 
 }
+
+function reset(){
+    removeClassButtonSelect()
+    document.querySelector("#custom-tip").value = ""
+
+    numberOfPeopleInput.value = ""
+    numberOfPeople = 0
+}
