@@ -24,7 +24,18 @@ function receiveNumberOfPeopleValue(){
 function receiveTipPorcentageValue(value){
 
     tipPorcentage = value / 100
-    buttonSelected = document.querySelector("")
+
+    buttonSelected = document.querySelector(`#button-${value}`)
+    buttonSelected.classList.add("button-selectd")
+
+    
+}
+
+function removeClassButtonSelect(){
+    if(buttonSelected !== null){
+        buttonSelected.classList.remove("button-selectd")
+        buttonSelected = null
+    }
 }
 
 function caculate(){
@@ -34,3 +45,5 @@ function caculate(){
     else{
 
     }
+
+}
