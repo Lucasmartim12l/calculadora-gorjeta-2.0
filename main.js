@@ -11,14 +11,15 @@ numberOfPeopleInput.addEventListener("input", receiveNumberOfPeopleValue )
 
 function receiveBillValue(){
     bill = billInput.valueAsNumber
-
     caculate()
+
 }
 
 function receiveNumberOfPeopleValue(){
     numberOfPeople = numberOfPeopleInput.valueAsNumber
 
     caculate()
+
 }
 
 function receiveTipPorcentageValue(value){
@@ -45,9 +46,10 @@ function removeClassButtonSelect(){
 function receiveCustomTipPorcentageValue(){
     tipPorcentage = document.querySelector("#custom-tip").valueAsNumber / 100
 
+    caculate()
+
     removeClassButtonSelect()
 
-    caculate()
 }
 
 function caculate(){
@@ -68,9 +70,14 @@ function caculate(){
 }
 
 function reset(){
-    removeClassButtonSelect()
-    document.querySelector("#custom-tip").value = ""
-
+    billInput.value = ""
+    bill = 0
+    tipPorcentage = 0
     numberOfPeopleInput.value = ""
     numberOfPeople = 0
+
+    removeClassButtonSelect()
+    document.querySelector("#custom-tip").value = ""
+  document.querySelector(".amount strong").innerText = "$0.00"
+    document.querySelector(".total strong").innerText = "$0.00"
 }

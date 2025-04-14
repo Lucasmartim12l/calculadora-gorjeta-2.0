@@ -32,7 +32,7 @@
                     <button onclick="receiveTipPorcentageValue(15)" id="button-15">15%</button>
                     <button onclick="receiveTipPorcentageValue(25)" id="button-25">25%</button>
                     <button onclick="receiveTipPorcentageValue(50)" id="button-50">50%</button>
-                    <input oninput="receiveTipPorcentageValue()" type = "number" id="custom-tip" placeholder="Custon">
+                    <input oninput="receiveCustomTipPorcentageValue()" type = "number" id="custom-tip" placeholder="Custom">
                 </div>
             </div>
 
@@ -63,7 +63,7 @@
                 <strong>$0.00</strong>
             </div>
           </div>
-            <button>Reset</button>
+            <button onclick="reset()">Reset</button>
 
         </section>
     </main> 
